@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f5f5;
+    color: #111;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: #111111a3;
+    color: white;
+    padding: 20px 40px;
+}
+
+#flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: royalblue;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: crimson;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(to left, rgba(65, 105, 225, 0.263), rgba(135, 207, 235, 0.312)), url('bg-hero.webp') no-repeat center/cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.intro-box {
+    padding: 20px;
+    background: linear-gradient(to right, rgba(208, 192, 119, 0.692), rgba(102, 176, 205, 0.697));
+    border: 2px solid rgb(41, 77, 83);
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.intro-box h2 {
+    border: 1px solid white;
+    padding: 5px 12px;
+    border-radius: 4px;
+    background: white;
+    display: inline;
+}
+
+.intro-box p {
+    margin-top: 20px;
+    color: white;
+}
+
+.profile-img {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.profile-img img {
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+
+.intro-box h2 {
+    border: 1px solid white;
+    background: white;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* About Section */
+#about {
+    min-height: 100vh;
+    padding: 100px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.about-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 1.5px;
+}
+
+.about-content code {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.resume-btn button {
+    padding: 10px;
+    border: 1px solid crimson;
+    background: linear-gradient(to right, crimson, red);
+    border-radius: 4px;
+    box-shadow: 0px 6px 12px #ae7373;
+}
+
+.resume-btn button a {
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Project Section */
+#project {
+    min-height: 100vh;
+    padding: 100px 30px;
+}
+
+#project h2 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.project-flex {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.project-box {
+    /* flex = grow shrink basis */
+    flex: 1 1 300px;
+    max-width: 300px;
+    border: 1px solid rgb(41, 67, 75);
+    padding: 20px;
+    text-align: center;
+    background-color: #f6b6b6;
+    border-radius: 6px;
+}
+
+/* Contact Section */
+#contact {
+    min-height: 100vh;
+    padding: 100px 20px;
+}
+
+.contact-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 2px solid #9e9a9a;
+    outline: 0;
+    border-radius: 4px;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+.form-btn button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: crimson;
+    border: 1px solid crimson;
+    border-radius: 4px;
+    color: white;
+}
+
+/* ? Media Query - Responsive */
+
+@media screen and (max-width: 450px) {
+    header {
+        flex-direction: column;
+    }
+}
